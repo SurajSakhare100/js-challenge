@@ -1,148 +1,144 @@
-// // ES 6 ENGINE FEATURES
+const name = "suraj";
+const age = 20;
+const word = "jio";
 
-// const name = "suraj";
-// const age = 20;
-// const word = "jio";
-// // console.log(`i am ${name} and my age is ${age}`)
-// const string = `
-// hi there i am ${name}
-// and let's ${word} ${word} ${word} ${word} dhandahna dhan
-// `;
+const string = `
+hi there i am ${name}
+and let's ${word} ${word} ${word} ${word} dhandahna dhan
+`;
 
-// const arr = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4];
 
-// const [first, second, third] = arr;
-// console.log(first); 
-// console.log(second); 
-// console.log(third);
-// const [, , , thirdElement] = arr;
-// console.log(thirdElement);
+const [first, second, third] = arr;
+console.log(first); 
+console.log(second); 
+console.log(third);
 
-// const [firstElement, ...rest] = arr;
-// console.log(firstElement); 
-// console.log(rest);
+const [, , , fourthElement] = arr;
+console.log(fourthElement);
 
-// let bookref = {
-//   title: "The Great Gatsby",
-//   author: "F. Scott Fitzgerald",
-//   year: 1925,
-// };
-// const { title: bookTitle, author: bookAuthor } = bookref;
-// console.log(bookTitle);
-// console.log(bookAuthor); 
-// const { genre = "Fiction" } = bookref;
-// console.log(genre); 
+const [firstElement, ...rest] = arr;
+console.log(firstElement); 
+console.log(rest);
 
-// function sum(...numbers) {
-//   return numbers.reduce((total, number) => total + number, 0);
-// }
+let bookref = {
+  title: "The Great Gatsby",
+  author: "F. Scott Fitzgerald",
+  year: 1925,
+};
 
-// console.log(sum(1, 2, 3)); 
-// console.log(sum(4, 5));
+const { title: bookTitle, author: bookAuthor } = bookref;
+console.log(bookTitle);
+console.log(bookAuthor);
 
-// bookref = {
-//     title: "The Great Gatsby",
-//     author: "F. Scott Fitzgerald",
-//     year: 1925,
-//   };
-// const { title, author, ...details } = bookref;
-// console.log(title);   
-// console.log(author);  
-// console.log(details); 
+const { genre = "Fiction" } = bookref;
+console.log(genre);
 
-// const arr1 = [1, 2, 3];
-// const arr2 = [4, 5, 6];
+function sum(...numbers) {
+  return numbers.reduce((total, number) => total + number, 0);
+}
 
-// const combined = [...arr1, ...arr2];
-// console.log(combined);
-// const copy = [...arr1];
-// console.log(copy);
-// const bookDetails = {
-//     title: "The Great Gatsby",
-//     author: "F. Scott Fitzgerald"
-//   };
-  
-//   const additionalDetails = {
-//     year: 1925,
-//     genre: "Fiction"
-//   };
-  
-//   const completeBook = { ...bookDetails, ...additionalDetails };
-//   console.log(completeBook);
-//   const bookCopy = { ...bookDetails };
-//   console.log(bookCopy);
+console.log(sum(1, 2, 3)); 
+console.log(sum(4, 5));
 
-//   const numbers = [1, 2, 3];
+const { title, author, ...details } = bookref;
+console.log(title);   
+console.log(author);  
+console.log(details);
 
-// function add(a, b, c) {
-//   return a + b + c;
-// }
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
 
-// console.log(add(...numbers));
+const combined = [...arr1, ...arr2];
+console.log(combined);
 
+const copy = [...arr1];
+console.log(copy);
 
-// function greet(greeting, ...names) {
-//     return `${greeting}, ${names.join(" and ")}!`;
-//   }
-  
-//   console.log(greet("Hello", "Alice", "Bob", "Charlie"));
+const bookDetails = {
+  title: "The Great Gatsby",
+  author: "F. Scott Fitzgerald"
+};
 
-//   const arr4 = [1, 2, 3, 4, 5];
-// const [firstel, ...restele] = arr4;
+const additionalDetails = {
+  year: 1925,
+  genre: "Fiction"
+};
 
-// console.log(first); 
-// console.log(restele);
+const completeBook = { ...bookDetails, ...additionalDetails };
+console.log(completeBook);
 
-// const newArr = [firstel, ...rest];
-// console.log(newArr);
+const bookCopy = { ...bookDetails };
+console.log(bookCopy);
 
+const numbers = [1, 2, 3];
 
-// function add(a,b=1){
-//     return a+b;
-// }
-// console.log(add(3,4))
-// console.log(add(3))
+function add(a, b, c) {
+  return a + b + c;
+}
+
+console.log(add(...numbers));
+
+function greet(greeting, ...names) {
+  return `${greeting}, ${names.join(" and ")}!`;
+}
+
+console.log(greet("Hello", "Alice", "Bob", "Charlie"));
+
+const arr4 = [1, 2, 3, 4, 5];
+const [firstel, ...restele] = arr4;
+
+console.log(firstel); 
+console.log(restele);
+
+const newArr = [firstel, ...rest];
+console.log(newArr);
+
+function add(a, b = 1) {
+  return a + b;
+}
+
+console.log(add(3, 4));
+console.log(add(3));
 
 const createBook = (title, author, year) => ({
-    title,
-    author,
-    year,
-    getSummary() {
-      return `${this.title} by ${this.author}, published in ${this.year}.`;
-    }
-  });
-  
-  const myBook = createBook("Pride and Prejudice", "Jane Austen", 1813);
-  console.log(myBook.getSummary());
-  
-  const { title, author, ...rest } = myBook;
-  console.log(title);  // Output: "Pride and Prejudice"
-  console.log(author); // Output: "Jane Austen"
-  console.log(rest);   // Output: { year: 1813, getSummary: [Function: getSummary] }
-  
-
-  const properties = {
-    title: "1984",
-    author: "George Orwell",
-    year: 1949
-  };
-  
-  const book = {
-    [properties.title]: properties.author,
-    [`publishedYear_${properties.year}`]: properties.year
-  };
-  
-  console.log(book["1984"]);           // Output: "George Orwell"
-  console.log(book["publishedYear_1949"]); // Output: 1949
-  
-  function createObject(key, value) {
-    return {
-      [key]: value,
-      [`${key}_description`]: `This is a description for ${key}`
-    };
+  title,
+  author,
+  year,
+  getSummary() {
+    return `${this.title} by ${this.author}, published in ${this.year}.`;
   }
-  
-  const result = createObject("item", "value");
-  console.log(result.item);               // Output: "value"
-  console.log(result.item_description);   // Output: "This is a description for item"
-  
+});
+
+const myBook = createBook("Pride and Prejudice", "Jane Austen", 1813);
+console.log(myBook.getSummary());
+
+const { title: myBookTitle, author: myBookAuthor, ...restDetails } = myBook;
+console.log(myBookTitle);  
+console.log(myBookAuthor); 
+console.log(restDetails);
+
+const properties = {
+  title: "1984",
+  author: "George Orwell",
+  year: 1949
+};
+
+const book = {
+  [properties.title]: properties.author,
+  [`publishedYear_${properties.year}`]: properties.year
+};
+
+console.log(book["1984"]);           
+console.log(book["publishedYear_1949"]); 
+
+function createObject(key, value) {
+  return {
+    [key]: value,
+    [`${key}_description`]: `This is a description for ${key}`
+  };
+}
+
+const result = createObject("item", "value");
+console.log(result.item);               
+console.log(result.item_description);   
