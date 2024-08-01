@@ -1,4 +1,4 @@
-const name = "suraj";
+const name = "motabhai";
 const age = 20;
 const word = "jio";
 
