@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with SessionStorage</title>
+</head>
+<body>
+    <h1>Form with SessionStorage</h1>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="button" onclick="saveData()">Save</button>
+    </form>
+
+    <button onclick="loadData()">Load Saved Data</button>
+    
+    <button onclick="addTestData()">Add Test Data</button>
+    <button onclick="showBefore()">Show Before</button>
+    <button onclick="removeData()">Remove Data</button>
+    <button onclick="showAfter()">Show After</button>
+    
+    <div id="before"></div>
+    <div id="after"></div>
+
+    <script>
+        // Function to save form data to sessionStorage
+        function saveData() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            const formData = {
+                name: name,
+                email: email
+            };
+
+            sessionStorage.setItem('formData', JSON.stringify(formData));
+            alert('Data saved!');
+        }
+
+        // Function to load form data from sessionStorage
+        function loadData() {
+            const savedData = sessionStorage.getItem('formData');
+            if (savedData) {
+                const formData = JSON.parse(savedData);
+                document.getElementById('name').value = formData.name;
+                document.getElementById('email').value = formData.email;
+            } else {
+                alert('No data found in sessionStorage.');
+            }
+        }
+
+        // Load data when the page is loaded (if available)
+        window.onload = function() {
+            loadData();
+        }
+
+        function addTestData() {
+            sessionStorage.setItem('testKey', 'testValue');
+            alert('Test data added!');
+        }
+
+        // Function to show sessionStorage before removing data
+        function showBefore() {
+            const beforeDiv = document.getElementById('before');
+            const data = sessionStorage.getItem('testKey');
+            beforeDiv.innerHTML = `Before Removal: ${data ? data : 'No data found'}`;
+        }
+
+        // Function to remove data from sessionStorage
+        function removeData() {
+            sessionStorage.removeItem('testKey');
+            alert('Data removed!');
+        }
+
+        // Function to show sessionStorage after removing data
+        function showAfter() {
+            const afterDiv = document.getElementById('after');
+            const data = sessionStorage.getItem('testKey');
+            afterDiv.innerHTML = `After Removal: ${data ? data : 'No data found'}`;
+        }
+
+       
+    </script>
+</body>
+</html>
