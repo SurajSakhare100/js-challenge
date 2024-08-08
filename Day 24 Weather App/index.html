@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <main>
+            <div class="search">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-button">Get Weather</button>
+            </div>
+            <div class="weather-card">
+                <div class="weather-info">
+                    <h2 class="location" id="location">--</h2>
+                    <p class="temperature" id="temperature">--°C</p>
+                    <p class="condition" id="condition">--</p>
+                </div>
+                <div class="weather-icon" id="weather-icon">
+                    <i class="fas fa-sun"></i> <!-- Default icon -->
+                </div>
+            </div>
+            <div class="past-weather" id="past-weather">
+                <h3>Avg temp of City</h3>
+                <div id="past-weather-list"></div>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by <a href="https://wttr.in/">wttr.in</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

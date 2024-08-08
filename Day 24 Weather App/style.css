@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Search Styles */
+.search {
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search button:hover {
+    background-color: #2980b9;
+}
+
+/* Weather Card Styles */
+.weather-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-info {
+    text-align: left;
+}
+
+.weather-info .location {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.weather-info .temperature {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.weather-info .condition {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.weather-icon i {
+    font-size: 4rem;
+    color: #f39c12; /* Orange color for the sun icon */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#past-weather-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#past-weather-list div h2{
+    font-weight: 600;
+    line-height: 0;
+}
+#past-weather-list div .temp{
+    font-size: 3rem;
+    margin: 10px 0;
+}
