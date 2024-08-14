@@ -6,6 +6,8 @@ document
   .addEventListener("click", async function () {
     const query = document.getElementById("search-input").value;
     if (query) {
+      document.getElementById('movie-list').innerHTML=`<h1>Wait some seconds...</h1>`
+
       await fetchMovies(query);
       document.getElementById("search-input").value = "";
     }
