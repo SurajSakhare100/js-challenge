@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">MyApp</a>
+            <ul class="navbar-menu">
+                <li><a href="profile.html" class="navbar-item">Profile</a></li>
+                <li><a href="feed.html" class="navbar-item">Feed</a></li>
+                <li><a href="login.html" class="navbar-item">Logout</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Form Container -->
+    <div class="form-container">
+        <div class="form-box">
+            <h1>Register</h1>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div class="switch-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,533 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px;
+
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Forms */
+form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="file"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #3897f0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2878c0;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Profile */
+.profile-photo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px auto;
+}
+
+#profileDetails p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#logoutButton {
+  display: block;
+  background-color: #3897f0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#logoutButton:hover {
+  background-color: #2878c0;
+}
+
+/* Feed */
+.feed-container {
+  margin-bottom: 20px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.post p {
+  font-size: 16px;
+}
+
+.post strong {
+  font-size: 18px;
+}
+
+/* Upload Post */
+#uploadForm {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+
+.post-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.post-icons i {
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.post-icons i:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.fa-heart {
+  color: #e74c3c; /* Red color for like */
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+/* Basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #d8d8d8;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+  color: #f0f0f0;
+}
+
+.navbar-toggle {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  margin-top: 10px;
+  margin-left: 10px;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.navbar-toggler-icon::after {
+  top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #c1c1c1;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+  }
+
+  .navbar-item {
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 1px solid #444;
+  }
+
+  .navbar-toggle {
+      display: block;
+  }
+}
+
+/* Adjust content padding to avoid overlap */
+body {
+  padding-top: 70px; /* Adjust based on your navbar height */
+}
+
+/* Resetting default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #0095f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
+/* Centering the form on the page */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px); /* Adjust height considering the navbar height */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Styling the form */
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-box h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  transition: border-color 0.3s;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box input[type="password"]:focus {
+  border-color: #333333;
+  background-color: #ffffff;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 15px;
+  background-color: #0095f6;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-box button:hover {
+  background-color: #007bbd;
+}
+
+.form-box p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.form-box p a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-box p a:hover {
+  text-decoration: underline;
+}
+
+/* Additional link for switching between login/register */
+.switch-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.switch-link a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}

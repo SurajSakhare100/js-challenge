@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - SocialApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-brand">MyApp</a>
+        <ul class="navbar-menu">
+            <li><a href="profile.html" class="navbar-item">Profile</a></li>
+            <li><a href="feed.html" class="navbar-item">Feed</a></li>
+            <li><a href="login.html" class="navbar-item">Logout</a></li>
+        </ul>
+        <div class="navbar-toggle">
+            <span class="navbar-toggler-icon"></span>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container">
+        <h2>Feed</h2>
+        
+        <!-- Upload Post Form -->
+        <form id="uploadForm">
+            <input type="text" id="caption" placeholder="Write a caption..." required>
+            <input type="file" id="postImage" accept="image/*" required>
+            <input type="submit" value="Upload Post">
+        </form>
+        
+        <!-- Feed Container -->
+        <div id="feedContainer" class="feed-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
