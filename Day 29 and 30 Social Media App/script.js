@@ -149,11 +149,14 @@ function displayFeed() {
         feedContainer.innerHTML = '';
         posts.forEach(post => {
             const postElement = document.createElement('div');
+            console.log()
             postElement.className = 'post';
             postElement.innerHTML = `
-                <p><strong>${post.username}</strong></p>
-                <img src="${post.image}" alt="Post Image">
+            
+                <div class="flex"><img src="${users[0].photo}" alt="Post Image">
+                <p><strong>${post.username}</strong></p></div>
                 <p>${post.caption}</p>
+                <img src="${post.image}" alt="Post Image">
                 <div class="post-icons">
                     <i class="fa fa-heart"></i>
                     <i class="fa fa-comment"></i>
